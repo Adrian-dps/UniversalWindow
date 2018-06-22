@@ -10,7 +10,7 @@
 
 double Log2( double n )  
 {  
-    // log(n)/log(2) is log2.  
+
     return log( n ) / log( 2 );  
 }  
 
@@ -32,16 +32,12 @@ double calcularEntropia(unsigned char * array1, int tam)
 
     double  entropy = 0;
     int     i;
-    
-    //printf("%d",n);
+
     for (i = 0; i < 256; i++) {
         if (array[i] == 0)
             continue;
         double  p = 1.0 * array[i] / n;
         entropy += p * Log2(1 / p);
     }
-
-   
-    //printf("La ENTROPIA del archivo es: %f [bits/byte]\n", entropy);
     return entropy;
 }
