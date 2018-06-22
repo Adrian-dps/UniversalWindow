@@ -38,7 +38,7 @@ double calcularEntropia(unsigned char * array1, int tam)
         if (array[i] == 0)
             continue;
         double  p = 1.0 * array[i] / n;
-        entropy += p * Log2 (1 / p);
+        entropy += p * Log2(1 / p);
     }
 
    
